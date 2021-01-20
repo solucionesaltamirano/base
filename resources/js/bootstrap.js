@@ -42,6 +42,3 @@ window.Echo = new Echo({
     enabledTransports: ['ws', 'wss'],
 });
 
-    console.log("bootstrap url", process.env.APP_URL);
-    console.log("bootstrap", process.env.MIX_PRUEBA);
-   
