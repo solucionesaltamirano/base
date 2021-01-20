@@ -3837,14 +3837,15 @@ window.Pusher = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/d
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__.default({
   broadcaster: 'pusher',
   key: "567ec690978e57178354",
-  wsHost: process.env.APP_URL,
-  cluster: "us2",
-  wsPort: 6001,
-  wwsPort: 6002,
-  // forceTLS: true,
+  wsHost: window.location.hostname,
+  wsPort: 6002,
+  wssPort: 6002,
+  disableStats: false,
   encrypted: true,
   enabledTransports: ['ws', 'wss']
 });
+console.log("bootstrap url", process.env.APP_URL);
+console.log("bootstrap", "base.local");
 
 /***/ }),
 
