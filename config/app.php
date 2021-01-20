@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -106,7 +106,7 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    'faker_locale' => 'es_GT',
 
     /*
     |--------------------------------------------------------------------------
@@ -181,6 +181,8 @@ return [
         Yajra\DataTables\ButtonsServiceProvider::class,
         Yajra\DataTables\HtmlServiceProvider::class,
 
+        
+
 
     ],
 
@@ -235,6 +237,10 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+
+        'Form'      => Collective\Html\FormFacade::class,
+        'Html'      => Collective\Html\HtmlFacade::class,
+        'Flash'     => Laracasts\Flash\Flash::class,
 
     ],
 
