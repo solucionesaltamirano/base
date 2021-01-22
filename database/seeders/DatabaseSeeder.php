@@ -13,6 +13,29 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        //Usuario admin
+
+        \App\Models\User::factory()->create([
+            'name' => "Gerson Altamirano",
+            'email' => "gersonaltamirano@gmail.com",
+            'email_verified_at' => now(),
+            'password' => '$2y$10$TYOlb3k5Vgg41etc8ZF6SeDyJUyuyTuaJGjl4xIbhLvs2442KXRI2', // Admin123
+        ]);
+
+        \App\Models\Team::factory()->create([
+            'name' => 'Gerson Team',
+            'user_id' => 1,
+            'personal_team' => true,
+        ]);
+        
+        
+
+
+        \App\Models\User::factory(100)->create();
+        // \App\Models\Team::factory(101)->create();
+        \App\Models\Menu::factory(3)->create();
+
+        $this->call(CategoryfaiconsTableSeeder::class);
+        $this->call(FaiconsTableSeeder::class);
     }
 }
