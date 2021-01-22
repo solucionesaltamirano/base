@@ -130,11 +130,11 @@ return [
 
         'softDelete' => true,
 
-        'save_schema_file' => true,
+        'save_schema_file' => false,
 
         'localized' => false,
 
-        'tables_searchable_default' => false,
+        'tables_searchable_default' => true,
 
         'repository_pattern' => false,
 
