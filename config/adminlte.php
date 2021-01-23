@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
-    'title_prefix' => '',
+    'title' => 'Soluciones Altamirano',
+    'title_prefix' => 'Soluciones Altamirano |',
     'title_postfix' => '',
 
     /*
@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>Admin</b>BASE',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -225,7 +225,8 @@ return [
 
     'menu' => [
         [
-            'text' => 'search',
+            // items del navbar
+            'text' => 'buscar',
             'search' => true,
             'topnav' => true,
         ],
@@ -237,7 +238,7 @@ return [
         [
             'text'        => 'pages',
             'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
+            'icon'        => 'fal fa-sign-in-alt',
             'label'       => 4,
             'label_color' => 'success',
         ],
@@ -245,12 +246,12 @@ return [
         [
             'text' => 'profile',
             'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fal fa-user-circle',
         ],
         [
             'text' => 'change_password',
             'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
+            'icon' => 'fal fa-lock-alt',
         ],
         [
             'text'    => 'multilevel',
