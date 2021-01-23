@@ -19,7 +19,7 @@ return [
 
         'repository'        => app_path('Repositories/'),
 
-        'routes'            => base_path('routes/web.php'),
+        'routes'            => base_path('routes/admin.php'),
 
         'api_routes'        => base_path('routes/api.php'),
 
@@ -39,7 +39,7 @@ return [
 
         'tests'             => base_path('tests/'),
 
-        'views'             => resource_path('views/'),
+        'views'             => resource_path('views/admin'),
 
         'schema_files'      => resource_path('model_schemas/'),
 
@@ -134,7 +134,7 @@ return [
 
         'localized' => false,
 
-        'tables_searchable_default' => true,
+        'tables_searchable_default' => false,
 
         'repository_pattern' => false,
 
@@ -172,7 +172,7 @@ return [
 
         'swagger'       => false,
 
-        'tests'         => false,
+        'tests'         => true,
 
         'datatables'    => true,
 

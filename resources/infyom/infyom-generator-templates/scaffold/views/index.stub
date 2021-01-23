@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('adminlte::page')
 
 @section('content')
     <section class="content-header">
@@ -22,5 +22,12 @@
         $PAGINATE$
         </div>
     </div>
-@endsection
+@stop
 
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+@stop
+
+@section('js')
+    <script src="{{ asset('js/app.js') }}"></script>
+@stop
