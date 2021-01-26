@@ -17,8 +17,21 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body>
-        <div class="font-sans text-gray-900 antialiased">
-            {{ $slot }}
+
+        @livewire('menu-nav')
+        
+        
+        <div class="flex">
+            @livewire('aside-nav')
+        
+            <main class="w-full px-6 py-20 bg-gray-100">
+                <div class="font-sans antialiased text-gray-900">
+                    {{ $slot }}
+                </div>
+            </main>
         </div>
+        
+        @livewire('footer')
+
     </body>
 </html>
