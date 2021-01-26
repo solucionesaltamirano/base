@@ -32709,6 +32709,34 @@ select {
           animation: bounce 1s infinite;
 }
 
+aside::-webkit-scrollbar {
+  width: 20px;
+}
+
+aside::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+aside::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -192153,4 +192181,6 @@ select {
             animation: bounce 1s infinite;
   }
 }
+
+
 
