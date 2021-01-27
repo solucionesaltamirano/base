@@ -12,36 +12,31 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-
+        
         @livewireStyles
-
+        
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="font-sans antialiased">
-        <x-jet-banner />
+    <body>
 
-        <div class="min-h-screen bg-gray-100">
-            @livewire('navigation-menu')
-
-            <!-- Page Heading -->
-            <header class="bg-white shadow">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    {{ $header }}
-                    <i class="fad fa-solar-system"></i>
+        @livewire('menu-nav')
+        
+        
+        <div class="flex">
+            @livewire('aside-nav')
+        
+            <main class="w-full px-1 py-16 bg-gray-100">
+                <div class="font-sans antialiased text-gray-900">
+                    {{ $slot }}
                 </div>
-
-            </header>
-
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-                <i class="fad fa-solar-system"></i>
             </main>
         </div>
+        
+        @livewire('footer')
 
         @stack('modals')
-
+        
         @livewireScripts
 
     </body>

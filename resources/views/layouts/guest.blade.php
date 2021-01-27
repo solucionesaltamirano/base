@@ -13,6 +13,8 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
+        @livewireStyles
+        
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
@@ -22,7 +24,7 @@
         
         
         <div class="flex">
-            @livewire('aside-nav')
+            
         
             <main class="w-full px-6 py-20 bg-gray-100">
                 <div class="font-sans antialiased text-gray-900">
@@ -32,6 +34,8 @@
         </div>
         
         @livewire('footer')
+
+        @livewireScripts
 
     </body>
 </html>
