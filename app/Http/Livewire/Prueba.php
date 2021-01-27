@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire;
 
-use App\Events\PruebaEvent;
+use App\Events\NotiEvent;
 use Livewire\Component;
 
 class Prueba extends Component
@@ -12,7 +12,7 @@ class Prueba extends Component
     public $notification = false;
     
     public function notificar() {
-        broadcast(new PruebaEvent);
+        broadcast(new NotiEvent);
     }
 
     protected function getListeners()
