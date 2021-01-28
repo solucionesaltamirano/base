@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFaiconsTable extends Migration
+class CreateCategoryfaiconsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreateFaiconsTable extends Migration
      */
     public function up()
     {
-        Schema::create('faicons', function (Blueprint $table) {
-            $table->integer('id')->primary();
-            $table->string('value', 45);
-            $table->integer('categoryfaicon_id')->index('fk_faicons_categoryfaicons1_idx');
+        Schema::create('categoryfaicons', function (Blueprint $table) {
+            $table->integer('id', true);
+            $table->string('name', 45);
+            $table->string('class', 45);
+            $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -27,6 +29,6 @@ class CreateFaiconsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('faicons');
+        Schema::dropIfExists('categoryfaicons');
     }
 }

@@ -21,27 +21,48 @@ class CategoryfaiconsTableSeeder extends Seeder
         \DB::table('categoryfaicons')->insert(array (
             0 => 
             array (
+                'class' => 'fas',
+                'created_at' => NULL,
+                'deleted_at' => NULL,
                 'id' => 1,
                 'name' => 'Solid',
-                'class' => 'fas',
+                'updated_at' => NULL,
             ),
             1 => 
             array (
+                'class' => 'far',
+                'created_at' => NULL,
+                'deleted_at' => NULL,
                 'id' => 2,
                 'name' => 'Regular',
-                'class' => 'far',
+                'updated_at' => NULL,
             ),
             2 => 
             array (
+                'class' => 'fal',
+                'created_at' => NULL,
+                'deleted_at' => NULL,
                 'id' => 3,
                 'name' => 'Ligth',
-                'class' => 'fal',
+                'updated_at' => NULL,
             ),
             3 => 
             array (
+                'class' => 'fad',
+                'created_at' => NULL,
+                'deleted_at' => NULL,
                 'id' => 4,
-                'name' => 'Brands',
+                'name' => 'Duotone',
+                'updated_at' => NULL,
+            ),
+            4 => 
+            array (
                 'class' => 'fab',
+                'created_at' => NULL,
+                'deleted_at' => NULL,
+                'id' => 5,
+                'name' => 'Brands',
+                'updated_at' => NULL,
             ),
         ));
         
