@@ -33,7 +33,7 @@ class DatabaseSeeder extends Seeder
 
         \App\Models\User::factory(100)->create();
         // \App\Models\Team::factory(101)->create();
-        \App\Models\Menu::factory(3)->create();
+        // \App\Models\Menu::factory(3)->create();
 
         $this->call(CategoryfaiconsTableSeeder::class);
         $this->call(FaiconsTableSeeder::class);
