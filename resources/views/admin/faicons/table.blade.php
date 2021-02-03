@@ -26,11 +26,14 @@
                                 <thead class="divide-x divide-gray-100 bg-bluegoo-400">
                                     <tr>
                                         <th  scope="col" class="px-4 py-2 text-xs font-bold tracking-wider text-left text-gray-800 uppercase border-r border-gray-100">
-    Value
-</th>
-        <th  scope="col" class="px-4 py-2 text-xs font-bold tracking-wider text-left text-gray-800 uppercase border-r border-gray-100">
-    Categoryfaicon Id
-</th>
+                                            Value
+                                        </th>
+                                        <th  scope="col" class="px-4 py-2 text-xs font-bold tracking-wider text-left text-gray-800 uppercase border-r border-gray-100">
+                                            Categoria
+                                        </th>
+                                        <th  scope="col" class="px-4 py-2 text-xs font-bold tracking-wider text-left text-gray-800 uppercase border-r border-gray-100">
+                                            Preview
+                                        </th>
                                         <th scope="col" class="px-4 py-2 text-xs font-bold tracking-wider text-left text-gray-800 uppercase">
                                             Action
                                         </th>
@@ -39,12 +42,15 @@
                                 <tbody>
                                 @foreach($faicons as $faicon)
                                     <tr class="hover:bg-blue-200 @if($faicon->id % 2 === 0) bg-gray-100  @endif " >
-                                        <td class="w-1/2 px-4 py-1 text-gray-500 border border-gray-300 whitespace-nowrap" >{{ $faicon->value }}</td>
-
-
-            <td class="w-1/2 px-4 py-1 text-gray-500 border border-gray-300 whitespace-nowrap" >{{ $faicon->categoryfaicon_id }}</td>
-
-
+                                        <td class="w-1/3 px-4 py-1 text-gray-500 border border-gray-300 whitespace-nowrap" >
+                                            {{ $faicon->value }}
+                                        </td>
+                                        <td class="w-1/3 px-4 py-1 text-gray-500 border border-gray-300 whitespace-nowrap" >
+                                            {{ $faicon->categoryfaicon->name }}
+                                        </td>
+                                        <td class="w-1/3 px-4 py-1 text-center text-blue-600 border border-gray-300 whitespace-nowrap" >
+                                            <i class="{{ $faicon->categoryfaicon->class }} {{ $faicon->value }}"></i> 
+                                        </td>
                                         <td class="w-1/5 px-4 py-1 border border-gray-300 whitespace-nowrap">
                                             {!! Form::open(['route' => ['faicons.destroy', $faicon->id], 'method' => 'delete']) !!}
                                             <div class='right-0 inline-flex text-xs'>
