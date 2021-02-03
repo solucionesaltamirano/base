@@ -3,11 +3,22 @@
 namespace App\Http\Livewire;
 
 use App\Events\NotiEvent;
+use App\Models\Categoryfaicon;
 use Livewire\Component;
+use App\Models\Faicon;
+
+
+
 
 class Prueba extends Component
 {
+
+    
+
     public $texto = "Hola, soy un atributo del componente Prueba";
+
+    
+
 
     public $notification = false;
     
@@ -29,6 +40,13 @@ class Prueba extends Component
 
     public function render()
     {
-        return view('livewire.prueba');
+
+        $faicons = Faicon::paginate(10); 
+
+        $categories = Categoryfaicon::all();
+
+        $icons = $categories->faicons->find();
+
+        return view('livewire.prueba', compact('faicons', 'icons'));
     }
 }
