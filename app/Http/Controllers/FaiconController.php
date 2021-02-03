@@ -22,7 +22,6 @@ class FaiconController extends AppBaseController
     public function index(Request $request)
     {
         /** @var Faicon $faicons */
-        
         $faicons = Faicon::paginate(10);
 
         return view('admin.faicons.index')

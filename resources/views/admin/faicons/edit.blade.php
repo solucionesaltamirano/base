@@ -1,16 +1,13 @@
-@extends('adminlte::page')
-
-@section('content')
-    <section class="content-header">
+<x-app-layout>
+    <section class="">
         <h1>
             Faicon
         </h1>
    </section>
-   <div class="content">
-       @include('adminlte-templates::common.errors')
-       <div class="box box-primary">
-           <div class="box-body">
-               <div class="row">
+   <div class="">
+       <div class="">
+           <div class="">
+               <div class="">
                    {!! Form::model($faicon, ['route' => ['faicons.update', $faicon->id], 'method' => 'patch']) !!}
 
                         @include('admin.faicons.fields')
@@ -20,7 +17,7 @@
            </div>
        </div>
    </div>
-@stop
+</x-app-layout>
 
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">

@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 /**
  * Class Faicon
  * @package App\Models
- * @version February 3, 2021, 7:33 pm UTC
+ * @version February 3, 2021, 7:47 pm UTC
  *
  * @property \App\Models\Categoryfaicon $categoryfaicon
  * @property string $value
