@@ -22,7 +22,7 @@ class $MODEL_NAME$Controller extends AppBaseController
     public function index(Request $request)
     {
         /** @var $MODEL_NAME$ $$MODEL_NAME_PLURAL_CAMEL$ */
-        $$MODEL_NAME_PLURAL_CAMEL$ = $MODEL_NAME$::$RENDER_TYPE$;
+        $$MODEL_NAME_PLURAL_CAMEL$ = $MODEL_NAME$::paginate(10);
 
         return view('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.index')
             ->with('$MODEL_NAME_PLURAL_CAMEL$', $$MODEL_NAME_PLURAL_CAMEL$);

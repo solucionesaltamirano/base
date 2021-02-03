@@ -1,1 +1,2 @@
-<td>{{ $$MODEL_NAME_CAMEL$->$FIELD_NAME$ }}</td>
+<td class="w-1/2 px-4 py-1 text-gray-500 border border-gray-300 whitespace-nowrap" >{{ $$MODEL_NAME_CAMEL$->$FIELD_NAME$ }}</td>
+

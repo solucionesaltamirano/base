@@ -1,28 +1,25 @@
-@extends('adminlte::page')
+<x-app-layout>
 
-@section('content')
-    <section class="content-header">
-        <h1 class="pull-left">$MODEL_NAME_PLURAL_HUMAN$</h1>
-        <h1 class="pull-right">
-           <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.create') }}">Add New</a>
-        </h1>
-    </section>
-    <div class="content">
-        <div class="clearfix"></div>
-
-        @include('flash::message')
-
-        <div class="clearfix"></div>
-        <div class="box box-primary">
-            <div class="box-body">
-                    @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.table')
+    <div class="pt-4 mt-6 ml-4 mr-4 bg-white rounded-lg dark:bg-black">
+        <div class="relative inline-flex w-full ">
+            <div> 
+                <div class="ml-8 font-sans text-2xl font-semibold ">
+                    $MODEL_NAME_PLURAL_HUMAN$
+                </div>
+            </div>
+            <div class="absolute top-0 mt-1 right-8 ">
+                <a class="px-2 py-2 ml-8 text-sm text-blue-500 border border-blue-500 rounded hover:text-gray-100 hover:bg-blue-600" href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.create') }}"><i class="fal fa-plus-circle"></i> Agregar nuevo</a>
             </div>
         </div>
-        <div class="text-center">
-        $PAGINATE$
+        <div class="">
+
+            @include('flash::message')
+            @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.table')
+            
         </div>
     </div>
-@stop
+
+</x-app-layout>
 
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
