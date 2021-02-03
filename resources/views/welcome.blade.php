@@ -12,6 +12,13 @@
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
 
+    <script
+        data-ad-client="ca-pub-6164048534137747"
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+
+    </script>
+
 </head>
 <body>
 
@@ -22,7 +29,7 @@
         <svg class="absolute inset-y-0 right-0 hidden w-48 h-full text-white transform translate-x-1/2 lg:block" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
           <polygon points="50,0 100,0 50,100 0,100" />
         </svg>
-  
+
         <div class="relative px-4 pt-6 sm:px-6 lg:px-8">
           <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
             <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
@@ -35,7 +42,7 @@
                   <button type="button" class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" id="main-menu" aria-haspopup="true">
                     <span class="sr-only">Open main menu</span>
                     <!-- Heroicon name: menu -->
-                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <svg class="w-6 h-6" xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                   </button>
@@ -44,13 +51,13 @@
             </div>
             <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
               <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Product</a>
-  
+
               <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
-  
+
               <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Marketplace</a>
-  
+
               <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a>
-  
+
               @auth
                 <a href="{{ route('dashboard') }}" class="font-medium text-indigo-600 hover:text-indigo-500">Admin</a>
               @else
@@ -60,10 +67,10 @@
             </div>
           </nav>
         </div>
-  
+
         <!--
           Mobile menu, show/hide based on menu open state.
-  
+
           Entering: "duration-150 ease-out"
             From: "opacity-0 scale-95"
             To: "opacity-100 scale-100"
@@ -81,7 +88,7 @@
                 <button type="button" class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                   <span class="sr-only">Close main menu</span>
                   <!-- Heroicon name: x -->
-                  <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <svg class="w-6 h-6" xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </button>
@@ -90,11 +97,11 @@
             <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
               <div class="px-2 pt-2 pb-3 space-y-1" role="none">
                 <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50" role="menuitem">Product</a>
-  
+
                 <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50" role="menuitem">Features</a>
-  
+
                 <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50" role="menuitem">Marketplace</a>
-  
+
                 <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50" role="menuitem">Company</a>
               </div>
               <div role="none">
@@ -115,7 +122,7 @@
             </div>
           </div>
         </div>
-  
+
         <main class="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
           <div class="sm:text-center lg:text-left">
             <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
@@ -145,7 +152,21 @@
       <img class="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="">
     </div>
   </div>
-  
-    
+
+  prueba adsense
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- prueba -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-6164048534137747"
+          data-adtest="on"
+          data-ad-slot="8748664460"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
 </body>
 </html>
