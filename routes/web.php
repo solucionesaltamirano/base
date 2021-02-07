@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Livewire\CardProducts;
 use App\Http\Livewire\Prueba;
 use App\Http\Livewire\UserDataTable;
 
@@ -20,3 +21,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
 Route::get('/users', [UserController::class, 'index'])->name('users.index');
+
+Route::get('/cardproduct', CardProducts::class);
